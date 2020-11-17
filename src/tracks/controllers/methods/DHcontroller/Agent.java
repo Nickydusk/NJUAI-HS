@@ -146,16 +146,6 @@ public class Agent extends AbstractPlayer {
 		return rand.nextInt(10) + value;
 	}
 
-	// 获取nnpc对应编号的ghost与id对应编号Avatar的距离
-	private int getNPCdis(StateObservation ob, int xAvatar, int yAvatar, int mindis, int nnpc) {
-		int xnpc = (int) ob.getNPCPositions()[nnpc].get(0).position.x / blocksz;
-		int ynpc = (int) ob.getNPCPositions()[nnpc].get(0).position.y / blocksz;
-		int distance = Math.min(Math.abs(xAvatar - xnpc),width-Math.abs(xAvatar-xnpc)) + Math.min(Math.abs(yAvatar - ynpc),height-Math.abs(yAvatar-ynpc));
-		if (distance < mindis)
-			mindis = distance;
-		return mindis;
-	}
-
 	// 从某一列表中获得最佳行动
 	private ACTIONS getBestAct(ArrayList<AStarNode> list) {
 		ACTIONS best_act;
