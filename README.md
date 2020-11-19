@@ -1,6 +1,6 @@
 ## 使用启发式搜索玩单人游戏的agent
 
-- 自己实现的算法位于：`C:\Users\dingh\seadrive_root\丁豪 18122\我的资料库\私人资料库\活动文件\NJUAI-HS\src\tracks\controllers\methods\DHcontroller\`，共有`Agent.java`,`AStarNode.java`两个文件。前者用于实现Astar搜索，后者为Astar搜索的节点。
+- 自己实现的算法位于：`NJUAI-HS\src\tracks\controllers\methods\DHcontroller\`，共有`Agent.java`,`AStarNode.java`两个文件。前者用于实现Astar搜索，后者为Astar搜索的节点。
 
 - 算法基于$A^*$框架，在每一轮决策的过程中逐渐展开临近状态，最终挑选启发式函数+路径代价之和最小的叶子结点对应的父辈动作作为本次动作返回。
 
